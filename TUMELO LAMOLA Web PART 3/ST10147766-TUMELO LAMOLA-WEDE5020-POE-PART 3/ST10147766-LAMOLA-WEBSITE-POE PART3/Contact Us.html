@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D-Printing & Tech.Supp | Welcome</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=0.1">
+        <meta name="description" content="3D-PRINTING & TECH.SUPP is known well known for offering their customers with the 3D printing business that is within technology and innovation. We utilize a wide range of technologies for electronic assemblies.">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Tumelo Lamola">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="Script.js"></script>
+    </head>
+    <body>
+        <header> 
+            <div class="container">
+                <div class="top-nav">
+                    <ul>
+                        <li><a href="Homepage.html">Homepage</a></li> 
+                        <li><a href="About Us.html">About Us</a></li>
+                        <li><a href="Products and Services.html">Products and Services</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                        </ul>
+                        <button>Call us</button>
+
+                </div>
+                <div class="side-nav">
+                    <img src="images/logo.jpg" class="logo">
+                    
+                   </div>     
+                </div>
+                <nav>
+                   
+                    <div class="nav-links">
+                      
+                    </div>
+                </nav>        
+    </header>
+    <body>
+        <section>
+            <h1>Get in Touch</h1>
+        </section>
+        <!-----------------------Contact Us Content-------------->
+        <section class="Contact Us">
+        <p>Get in touch using the form, or send us an email, and we’ll get back to you as soon as we can. For any urgent issues, please give us call. </p>
+        <div class="row">
+            <div class="contact-us-col">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                    <h3 align="justify">Call</h3>
+                    <p>078 542 3112</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-us-col">
+            <i class="fa fa envelope-o"></i>
+            <span>
+                <h3 align="justify">Email</h3>
+                <p>ST10147766@rcconnect.edu.za</p>
+            </span>
+        </div>
+        <div class="contact-us-col">
+            <h3 align="justify">Operating hours</h3>
+            <p>Mon - Fri 08:00 - 16:00<br> Sat 09:00 - 13:00</p>
+        </div>
+    </section>
+    <section class="Customer contact form">
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Comapatible" content="IE-edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+   </head>
+   <body>
+       <div class="container">
+           <form onsubmit="sendEmail(); reset(); return false;"> 
+               <h3>Get in Touch</h3>
+               <input type="text" id="name" placeholder="Full Name" required>
+               <input type="email" id="email" placeholder="Email" required>
+               <input type="text" id="phone" placeholder="Phone Number" required>
+               <textarea id="message" rows="4" placeholder="How can we assist you?"></textarea>
+               <button type="submit">Send</button>
+           </form>
+       </div>
+       <script src="https://smtpjs.com/v3/smtp.js"></script>
+       <script>
+         function sendEmail(){
+           Email.send({
+               Host:"smtp.gmail.com",
+               UserName:"ST10147766@rcconnect.edu.za",
+               Password: Tumi,
+               To:'ST10147766@rcconnect.edu.za',
+               From:document.getElementById("email").value,
+               Subject:"New Contact Form Enquiry",
+               Body:"Name: " + document.getEmentById("name").value
+               + "<br> Email: " + document.getElementById("email").value
+               + "<br> Phone Number: " + document.getElementById("phone").value
+               + "<br> Message: " + document.getElementById("message").value
+           }).then(
+               message => alert("Message Sent Successfully")
+           );
+         }  
+       </script>
+
+    </section>
+   
+    <section class="Google Form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2QjFtKzlbgFqvm1n3gL3r36W0Fm_WDTNZEcYUuCCaSuYbEA/viewform?usp=sf_link" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="Location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.9813674140796!2d28.0744664!3d-26.099526899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572d184759bf3%3A0x7bd5f6c2e3e90d1b!2s28%20Westbrooke%20Dr%2C%20Strathavon%2C%20Sandton%2C%202031%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1700038165506!5m2!1sen!2sie" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </body>
+    <!------------------------Footer----------------->
+<section class="footer">
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin-square"></i>
+    </div>
+    <p>3D-Printing & Tech.Supp &copy;2023. All Rights Reserved</p>
+</section>
+<script>
+    const year = document.getElementaryById("year")
+    year.textContent= new Date().getFullYear
+</script>
+</hTML>
